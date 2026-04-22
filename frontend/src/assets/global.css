@@ -15,3 +15,12 @@ html, body, #app {
   height: 100%;
   margin: 0;
 }
+
+.button1 {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+}
