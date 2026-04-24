@@ -1,16 +1,19 @@
-<script></script>
+<script setup>
+import HomescreenClock from '@/components/HomescreenClock.vue';
+</script>
 
 <template>
     <div class="container">
-        <div class="infoBox"></div>
+        <div><HomescreenClock /></div>
         <div class="optionsRow">
             <button class="button1"><i class="bi bi-cash-coin"></i></button>
             <button class="button1"><i class="bi bi-piggy-bank"></i></button>
+            <button class="button1"><i class="bi bi-gear"></i></button>
         </div>
     </div>
 </template>
 
-<style>
+<style scoped>
 .container {
     display: flex;
     flex-direction: column;
@@ -28,14 +31,5 @@
     display: flex;
     flex-direction: row;
     gap: 15px;
-}
-
-.infoBox {
-    aspect-ratio: 1/2;
-    width: 50%;
-    /* height: 350px; */
-    border-radius: 8px;
-    background-color: white;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 </style>
