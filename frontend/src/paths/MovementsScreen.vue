@@ -13,7 +13,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     width: 100%;
     height: 100%;
 }
@@ -21,14 +21,14 @@
 .box1 {
     background-color: white;
     width: 25%;
-    height: 50%;
+    height: 75%;
     border-radius: 8px;
 }
 
 .box2 {
     background-color: white;
-    width: 25%;
-    height: 50%;
+    width: 55%;
+    height: 75%;
     border-radius: 8px;
 }
 </style>
