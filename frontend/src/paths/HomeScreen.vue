@@ -1,4 +1,7 @@
 <script setup>
+import { useRouter } from "vue-router"
+const router = useRouter()
+
 import HomescreenClock from '@/components/HomescreenClock.vue';
 </script>
 
@@ -6,9 +9,9 @@ import HomescreenClock from '@/components/HomescreenClock.vue';
     <div class="container">
         <div><HomescreenClock /></div>
         <div class="optionsRow">
-            <button class="button1"><i class="bi bi-cart3"></i></button>
-            <button class="button1"><i class="bi bi-piggy-bank"></i></button>
-            <button class="button1"><i class="bi bi-gear"></i></button>
+            <button class="button1" @click="router.push('/movements')"><i class="bi bi-cart3"></i></button>
+            <button class="button1" @click="router.push('/savings')"><i class="bi bi-piggy-bank"></i></button>
+            <button class="button1" @click="router.push('/settings')"><i class="bi bi-gear"></i></button>
         </div>
     </div>
 </template>
