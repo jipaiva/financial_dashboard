@@ -15,10 +15,23 @@ db.serialize(() => {
   db.run(`
     CREATE TABLE IF NOT EXISTS types (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
-      name TEXT,
+      name TEXT UNIQUE,
       movement TEXT
     )
   `);
+
+  db.run(`
+      INSERT OR IGNORE INTO TYPES (name, movement) VALUES
+        ('Salary', 'in'),
+        ('Groceries', 'out'),
+        ('Electricity', 'out'),
+        ('Water', 'out'),
+        ('Gas', 'out'),
+        ('Transportation', 'out'),
+        ('Health', 'out'),
+        ('Leisure', 'out'),
+        ('Others', 'out')
+    `);
 
   db.run(`
     CREATE TABLE IF NOT EXISTS transactions (
