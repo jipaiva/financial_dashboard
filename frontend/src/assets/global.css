@@ -24,3 +24,9 @@ html, body, #app {
   background-color: white;
   border: none;
 }
+
+.button2 {
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}
